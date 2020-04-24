@@ -17,11 +17,37 @@
         {
             return Pecas[linha, coluna];
         }
+        public Peca peca(Posicao pos)
+        {
+            return Pecas[pos.linha, pos.coluna];
+        }
+
+        public bool existePeca(Posicao pos)
+        {
+            validarPosicao(pos);
+            return peca(pos) != null;
+        }
 
         public void colocarPeca(Peca p, Posicao pos)
         {
             Pecas[pos.linha, pos.coluna] = p;
             p.Posicao = pos;
+        }
+
+        public bool posicaoValida(Posicao pos)
+        {
+            if (pos.linha < 0 || pos.linha >= Linhas || pos.coluna < 0 || pos.coluna >= Colunas)
+            {
+                return false;
+            }
+            return true;
+        }
+        public void validarPosicao(Posicao pos)
+        {
+            if (!posicaoValida(pos))
+            {
+                throw new TabuleiroException("Posição invalida!");
+            }
         }
     }
 }
