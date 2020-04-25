@@ -20,6 +20,22 @@
             QteMovimentos++;
         }
 
+        public bool existeMovimentosPossiveis()
+        {
+            bool[,] mat = movimentosPossiveis();
+            for (int i = 0; i < Tabuleiro.Linhas; i++)
+            {
+                for (int j = 0; j < Tabuleiro.Colunas; j++)
+                {
+                    if (mat[i,j])
+                    {
+                        return true;
+                    }
+                }
+            }
+            return false;
+        }
+
         public abstract bool[,] movimentosPossiveis();
     }
 }
