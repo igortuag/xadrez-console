@@ -53,10 +53,10 @@ namespace Xadrez_Console
 
         public static void ImprimirTabuleiro(Tabuleiro tab)
         {
-            for (int i = 0; i < tab.Linhas; i++)
+            for (int i = 0; i < tab.linhas; i++)
             {
                 System.Console.Write(8 - i + " ");
-                for (int j = 0; j < tab.Colunas; j++)
+                for (int j = 0; j < tab.colunas; j++)
                 {
                     Tela.imprimirPeca(tab.peca(i, j));
                 }
@@ -70,10 +70,10 @@ namespace Xadrez_Console
             ConsoleColor fundoOriginal = Console.BackgroundColor;
             ConsoleColor fundoAlterado = ConsoleColor.DarkGray;
 
-            for (int i = 0; i < tab.Linhas; i++)
+            for (int i = 0; i < tab.linhas; i++)
             {
                 System.Console.Write(8 - i + " ");
-                for (int j = 0; j < tab.Colunas; j++)
+                for (int j = 0; j < tab.colunas; j++)
                 {
                     if (posicoesPossiveis[i, j])
                     {
