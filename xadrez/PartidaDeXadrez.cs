@@ -274,14 +274,14 @@ namespace xadrez
             colocarNovaPeça('f', 1, new Bispo(Cor.Branca, tab));
             colocarNovaPeça('g', 1, new Cavalo(Cor.Branca, tab));
             colocarNovaPeça('h', 1, new Torre(Cor.Branca, tab));
-            //colocarNovaPeça('a', 2, new Peao(Cor.Branca, tab));
-            //colocarNovaPeça('b', 2, new Peao(Cor.Branca, tab));
-            //colocarNovaPeça('c', 2, new Peao(Cor.Branca, tab));
-            //colocarNovaPeça('d', 2, new Peao(Cor.Branca, tab));
-            //colocarNovaPeça('e', 2, new Peao(Cor.Branca, tab));
-            //colocarNovaPeça('f', 2, new Peao(Cor.Branca, tab));
-            //colocarNovaPeça('g', 2, new Peao(Cor.Branca, tab));
-            //colocarNovaPeça('h', 2, new Peao(Cor.Branca, tab));
+            colocarNovaPeça('a', 2, new Peao(Cor.Branca, tab));
+            colocarNovaPeça('b', 2, new Peao(Cor.Branca, tab));
+            colocarNovaPeça('c', 2, new Peao(Cor.Branca, tab));
+            colocarNovaPeça('d', 2, new Peao(Cor.Branca, tab));
+            colocarNovaPeça('e', 2, new Peao(Cor.Branca, tab));
+            colocarNovaPeça('f', 2, new Peao(Cor.Branca, tab));
+            colocarNovaPeça('g', 2, new Peao(Cor.Branca, tab));
+            colocarNovaPeça('h', 2, new Peao(Cor.Branca, tab));
 
             colocarNovaPeça('a', 8, new Torre(Cor.Preta, tab));
             colocarNovaPeça('b', 8, new Cavalo(Cor.Preta, tab));
